@@ -60,7 +60,6 @@ BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMO
 
 # Platform
 TARGET_BOARD_PLATFORM := lahaina
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno660
 
 # Properties
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
