@@ -343,4 +343,8 @@
     <string-array name="config_deviceKeyHandlerClasses" translatable="false">
         <item>org.lineageos.settings.device.KeyHandler</item>
     </string-array>
+
+    <!-- The default peak refresh rate for a given device. -->
+    <integer name="config_defaultPeakRefreshRate">120</integer>
+
 </resources>
