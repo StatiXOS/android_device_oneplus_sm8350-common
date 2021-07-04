@@ -429,7 +429,7 @@ PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti.vendor
 
 # QTI components
-TARGET_COMMON_QTI_COMPONENTS := av
+TARGET_COMMON_QTI_COMPONENTS := adreno av
 
 # QTI service tracker
 PRODUCT_PACKAGES += \
