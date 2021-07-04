@@ -365,7 +365,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libavservices_minijail \
-    libavservices_minijail.vendor \
     libavservices_minijail_vendor \
     libcodec2_hidl@1.0.vendor
 
@@ -428,6 +427,9 @@ PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
+
+# QTI components
+TARGET_COMMON_QTI_COMPONENTS := av
 
 # QTI service tracker
 PRODUCT_PACKAGES += \
