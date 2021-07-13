@@ -41,15 +41,9 @@ msi001.ko
 m88rs6000t.ko
 mt2131.ko
 radio-i2c-rtc6226-qca.ko
-oplus_chg.ko
-touchscreen.ko
-gf_spi_driver.ko
-fingerprint_detect.ko
 aw8697.ko
-op_cmdline.ko
 oem_aboard.ko
 sim_holder_detect.ko
-project_info.ko
 op_rf_cable_monitor.ko
 bootloader_log.ko
 tri_key.ko
