@@ -371,7 +371,7 @@ PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
 # NFC
-TARGET_USES_NQ_NFC := true
+USE_NQ_NFC := true
 
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2:64 \
