@@ -32,6 +32,21 @@ using ::android::hardware::Return;
 using ::android::hardware::Void;
 using ::android::sp;
 
+#define KEY_GESTURE_W               246
+#define KEY_GESTURE_M               247
+#define KEY_GESTURE_S               248
+#define KEY_GESTURE_CIRCLE          250
+#define KEY_GESTURE_TWO_SWIPE       251
+#define KEY_GESTURE_UP_ARROW        252
+#define KEY_GESTURE_LEFT_ARROW      253
+#define KEY_GESTURE_RIGHT_ARROW     254
+#define KEY_GESTURE_DOWN_ARROW      255
+#define KEY_GESTURE_SWIPE_LEFT      63
+#define KEY_GESTURE_SWIPE_DOWN      64
+#define KEY_GESTURE_SWIPE_RIGHT     65
+#define KEY_GESTURE_SWIPE_UP        66
+#define KEY_GESTURE_SINGLE_TAP      67
+
 class TouchscreenGesture : public ITouchscreenGesture {
   public:
     // Methods from ::vendor::lineage::touch::V1_0::ITouchscreenGesture follow.
