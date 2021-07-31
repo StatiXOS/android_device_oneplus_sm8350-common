@@ -26,16 +26,38 @@ namespace touch {
 namespace V1_0 {
 namespace implementation {
 
+/*
+#define KEY_F5                  63
+#define KEY_F6                  64
+#define KEY_F7                  65
+#define KEY_F8                  66
+#define KEY_F9                  67
+#define KEY_GESTURE_W               246
+#define KEY_GESTURE_M               247
+#define KEY_GESTURE_S               248
+#define KEY_DOUBLE_TAP              KEY_WAKEUP
+#define KEY_GESTURE_CIRCLE          250
+#define KEY_GESTURE_TWO_SWIPE       251
+#define KEY_GESTURE_UP_ARROW        252
+#define KEY_GESTURE_LEFT_ARROW      253
+#define KEY_GESTURE_RIGHT_ARROW     254
+#define KEY_GESTURE_DOWN_ARROW      255
+#define KEY_GESTURE_SWIPE_LEFT      KEY_F5
+#define KEY_GESTURE_SWIPE_DOWN      KEY_F6
+#define KEY_GESTURE_SWIPE_RIGHT     KEY_F7
+#define KEY_GESTURE_SWIPE_UP        KEY_F8
+#define KEY_GESTURE_SINGLE_TAP      KEY_F9
+*/
 const std::map<int32_t, TouchscreenGesture::GestureInfo> TouchscreenGesture::kGestureInfoMap = {
-    {0, {251, "Two fingers down swipe", "/proc/touchpanel/double_swipe_enable"}},
-    {1, {252, "Down arrow", "/proc/touchpanel/down_arrow_enable"}},
-    {2, {253, "Left arrow", "/proc/touchpanel/left_arrow_enable"}},
-    {3, {254, "Right arrow", "/proc/touchpanel/right_arrow_enable"}},
-    {4, {247, "Letter M", "/proc/touchpanel/letter_m_enable"}},
-    {5, {250, "Letter O", "/proc/touchpanel/letter_o_enable"}},
-    {6, {248, "Letter S", "/proc/touchpanel/letter_s_enable"}},
-    {7, {246, "Letter W", "/proc/touchpanel/letter_w_enable"}},
-    {8, {255, "Single Tap", "/proc/touchpanel/single_tap_enable"}},
+    {0, {KEY_GESTURE_TWO_SWIPE, "Two fingers down swipe", "/proc/touchpanel/double_swipe_enable"}},
+    {1, {KEY_GESTURE_DOWN_ARROW, "Down arrow", "/proc/touchpanel/down_arrow_enable"}},
+    {2, {KEY_GESTURE_LEFT_ARROW, "Left arrow", "/proc/touchpanel/left_arrow_enable"}},
+    {3, {KEY_GESTURE_RIGHT_ARROW, "Right arrow", "/proc/touchpanel/right_arrow_enable"}},
+    {4, {KEY_GESTURE_M, "Letter M", "/proc/touchpanel/letter_m_enable"}},
+    {5, {KEY_GESTURE_CIRCLE, "Letter O", "/proc/touchpanel/letter_o_enable"}},
+    {6, {KEY_GESTURE_S, "Letter S", "/proc/touchpanel/letter_s_enable"}},
+    {7, {KEY_GESTURE_W, "Letter W", "/proc/touchpanel/letter_w_enable"}},
+    {8, {KEY_GESTURE_SINGLE_TAP, "Single Tap", "/proc/touchpanel/single_tap_enable"}},
 };
 
 Return<void> TouchscreenGesture::getSupportedGestures(getSupportedGestures_cb resultCb) {

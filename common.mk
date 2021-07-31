@@ -473,6 +473,7 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
+    TouchHandler \
     vendor.lineage.touch@1.0-service.oneplus_lahaina
 
 # tri-state-key
