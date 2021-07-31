@@ -1,0 +1,26 @@
+android_app {
+    name: "TouchHandler",
+
+    // Include SettingsLib and it's dependencies
+    defaults: ["SettingsLibDefaults"],
+
+    srcs: ["src/**/*.java"],
+    resource_dirs: ["res"],
+
+    manifest: "AndroidManifest.xml",
+
+    platform_apis: true,
+    certificate: "platform",
+    privileged: true,
+
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    },
+
+    static_libs: [
+        "androidx.preference_preference",
+        "jsr305",
+        "vendor.lineage.touch-V1.0-java",
+        "VendorSupportLib",
+    ],
+}
