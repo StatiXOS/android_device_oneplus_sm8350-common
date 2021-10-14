@@ -813,6 +813,9 @@ vendor/bin/nqnfcinfo
 
 # NFC firmware
 vendor/lib/libsn100u_fw.so
+vendor/lib64/jcos_nq_client.so
+vendor/lib64/ls_nq_client.so
+vendor/lib64/se_nq_extn_client.so
 
 # OMX
 vendor/lib/libAlacSwDec.so
