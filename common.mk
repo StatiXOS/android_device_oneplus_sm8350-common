@@ -294,7 +294,8 @@ PRODUCT_PACKAGES += \
 
 # Doze
 PRODUCT_PACKAGES += \
-    OnePlusDoze
+    OnePlusDoze \
+    OnePlusDozeOverlay
 
 # DRM
 PRODUCT_PACKAGES += \
