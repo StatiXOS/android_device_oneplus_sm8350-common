@@ -243,6 +243,9 @@ PRODUCT_PACKAGES += \
     vendor.oem_ftm_svc_disable.rc \
     vendor_modprobe.sh
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/modules.blocklist:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.blocklist
+
 # Component overrides
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml \
