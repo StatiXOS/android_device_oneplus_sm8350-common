@@ -59,6 +59,7 @@ TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig
 
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load))
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load.recovery))
 
 # Platform
 TARGET_BOARD_PLATFORM := lahaina
