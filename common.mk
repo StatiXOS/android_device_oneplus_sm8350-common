@@ -317,10 +317,11 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResTarget \
-    OPlusDozeResCommon \
+    OplusDozeResTarget \
     OPlusFrameworksResCommon \
     OPlusSettingsResCommon \
     OPlusSystemUIResCommon \
+    SystemUIResTarget \
     WifiResTarget
 
 # Partitions

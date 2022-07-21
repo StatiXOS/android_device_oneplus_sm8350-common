@@ -1,0 +1,24 @@
+<!--
+/*
+** Copyright (C) 2022, StatiXOS
+** SPDX-License-Identifer: Apache-2.0
+*/
+-->
+<!-- These resources are around just to allow their values to be customized
+     for different hardware and product builds. -->
+<resources>
+    <!-- Doze: does this device support STATE_DOZE?  -->
+    <bool name="doze_display_state_supported">true</bool>
+
+    <!-- Allow devices override audio panel location to the left side -->
+    <bool name="config_audioPanelOnLeftSide">true</bool>
+
+    <!-- Color of the UDFPS Pressed view -->
+    <color name="config_udfpsColor">#ffffe6</color>
+
+    <!-- HBM type of UDFPS overlay.
+            0 - GLOBAL HBM
+            1 - LOCAL HBM
+    -->
+    <integer name="config_udfps_hbm_type">0</integer>
+</resources>
