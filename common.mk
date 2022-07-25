@@ -4,6 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Platform
+PRODUCT_BOARD_PLATFORM := lahaina
+PRODUCT_USES_QCOM_HARDWARE := true
+
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
@@ -309,13 +313,11 @@ PRODUCT_PACKAGES += \
 # Overlays
 $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
 
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
-
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResTarget \
+    OPlusDozeResCommon \
     OPlusFrameworksResCommon \
     OPlusSettingsResCommon \
     OPlusSystemUIResCommon \
