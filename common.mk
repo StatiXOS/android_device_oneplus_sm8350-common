@@ -252,6 +252,15 @@ PRODUCT_PACKAGES += \
     ueventd.oplus.rc \
     ueventd.qcom.rc
 
+# Kernel
+TARGET_KERNEL_DIR ?= device/oneplus/sm8350-kernel
+LOCAL_KERNEL := $(TARGET_KERNEL_DIR)/Image
+
+PRODUCT_COPY_FILES += $(LOCAL_KERNEL):kernel
+
+# Kernel Headers
+PRODUCT_VENDOR_KERNEL_HEADERS += device/oneplus/sm8350-kernel/kernel-headers
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
