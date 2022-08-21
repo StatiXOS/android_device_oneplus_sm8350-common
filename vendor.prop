@@ -149,5 +149,3 @@ persist.vendor.sensors.sync_request=true
 
 # USB
 sys.usb.mtp.batchcancel=1
-vendor.usb.diag.func.name=ffs
-vendor.usb.use_ffs_mtp=1
