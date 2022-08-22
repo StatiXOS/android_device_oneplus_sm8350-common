@@ -16,6 +16,41 @@
       "message": "https://github.com/StatiXOS/android_vendor_statix/blob/tm/build/core/ProductConfigQcom.mk",
       "revId": "7f284d3da135f25f4dead07ce360ec28220641d5",
       "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "673ad5da_32210024",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000047
+      },
+      "writtenOn": "2022-08-22T06:40:28Z",
+      "side": 1,
+      "message": "A",
+      "revId": "7f284d3da135f25f4dead07ce360ec28220641d5",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b4aeb2ea_0176535a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000047
+      },
+      "writtenOn": "2022-08-22T06:40:28Z",
+      "side": 1,
+      "message": "Aah yes forgot this existed",
+      "parentUuid": "38974e88_572ade8d",
+      "revId": "7f284d3da135f25f4dead07ce360ec28220641d5",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
     }
   ]
 }
