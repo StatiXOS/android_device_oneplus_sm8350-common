@@ -255,6 +255,10 @@ PRODUCT_VENDOR_KERNEL_HEADERS += device/oneplus/sm8350-kernel/kernel-headers
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
 # LiveDisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.1-service.oplus
