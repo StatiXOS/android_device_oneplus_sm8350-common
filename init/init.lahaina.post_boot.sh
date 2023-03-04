@@ -19,3 +19,7 @@ write /sys/block/dm-6/queue/read_ahead_kb 128
 write /sys/block/dm-7/queue/read_ahead_kb 128
 write /sys/block/dm-8/queue/read_ahead_kb 128
 write /sys/block/dm-9/queue/read_ahead_kb 128
+
+# cpuset
+echo 0-3 > /dev/cpuset/background/cpus
+echo 0-3 > /dev/cpuset/system-background/cpus
