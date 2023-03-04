@@ -23,3 +23,14 @@ write /sys/block/dm-9/queue/read_ahead_kb 128
 # cpuset
 echo 0-1 > /dev/cpuset/background/cpus
 echo 0-3 > /dev/cpuset/system-background/cpus
+
+# Setup runtime schedTune
+write /dev/stune/foreground/schedtune.prefer_idle 1
+write /dev/stune/foreground/schedtune.prefer_high_cap 0
+write /dev/stune/foreground/schedtune.boost 0
+write /dev/stune/schedtune.prefer_idle 0
+write /dev/stune/schedtune.prefer_high_cap 0
+write /dev/stune/schedtune.boost 0
+write /dev/stune/top-app/schedtune.prefer_idle 1
+write /dev/stune/top-app/schedtune.prefer_high_cap 0
+write /dev/stune/top-app/schedtune.boost 10
