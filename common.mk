@@ -330,6 +330,7 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     OplusDozeResTarget \
     OPlusFrameworksResCommon \
+    OPlusSettingsLibResCommon \
     OPlusSettingsResCommon \
     OPlusSystemUIResCommon \
     SystemUIResTarget \
