@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from OnePlus 9 Pro (LE2125_11.F.20).
+## from OnePlus 9 Pro (LE2125_11.F.21).
 
 # ACDBs
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
@@ -985,6 +985,7 @@ vendor/lib/vendor.qti.diaghal@1.0.so
 vendor/lib64/vendor.qti.diaghal@1.0.so
 
 # Display (CWB)
+odm/etc/vintf/manifest/manifest_oplus_cwb.xml
 odm/lib64/vendor.oplus.hardware.cwb@1.0.so
 vendor/lib64/libcwb_sm8350.so
 
