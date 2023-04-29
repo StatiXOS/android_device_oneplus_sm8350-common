@@ -342,8 +342,9 @@ PRODUCT_PACKAGES += \
     librmnetctl
 
 # Sensors
+$(call inherit-product, vendor/hardware/oplus/hidl/sensors/sensors_product.mk)
+
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.0-service.multihal \
     libsensorndkbridge \
     sensors.oplus
 
