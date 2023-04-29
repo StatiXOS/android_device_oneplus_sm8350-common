@@ -321,10 +321,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
 # Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
-    android.hardware.power@1.2.vendor \
-    vendor.qti.hardware.perf@2.2.vendor
+$(call inherit-product, vendor/hardware/oplus/aidl/power-libperfmgr/power_product.mk)
 
 # QMI
 PRODUCT_PACKAGES += \
