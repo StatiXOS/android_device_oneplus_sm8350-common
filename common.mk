@@ -474,3 +474,6 @@ $(call inherit-product, vendor/oneplus/sm8350-common/sm8350-common-vendor.mk)
 
 # Inherit GCAM
 $(call inherit-product, vendor/gcam/gcam-vendor.mk)
+
+# Inherit OnePlus Dolby
+$(call inherit-product, vendor/oneplus/dolby/dolby.mk)

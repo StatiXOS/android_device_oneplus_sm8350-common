@@ -72,6 +72,9 @@ function blob_fixup() {
         vendor/etc/media_*/video_system_specs.json)
             sed -i "/max_retry_alloc_output_timeout/ s/1000/0/" "${2}"
             ;;
+        vendor/etc/media_codecs.xml)
+            sed -i '/<Include href="media_codecs_google_c2.xml" \/>/a\  <Include href="media_codecs_dolby_audio.xml" />' "${2}"
+            ;;
         vendor/etc/msm_irqbalance.conf)
             sed -i "s/IGNORED_IRQ=27,23,38$/&,115,332/" "${2}"
             ;;
