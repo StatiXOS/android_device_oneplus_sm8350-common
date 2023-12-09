@@ -298,6 +298,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 $(call inherit-product, vendor/hardware/oplus/overlay/qssi/qssi.mk)
+$(call inherit-product, vendor/hardware/oplus/overlay/generic/generic.mk)
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
